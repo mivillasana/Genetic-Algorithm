@@ -33,17 +33,40 @@ Fitness6 = 1/(1+F_obj6)
 Total = Fitness1 + Fitness2 + Fitness3 + Fitness4 + Fitness5 + Fitness6
 
 #print step 2 evaluation Evaluation Values
-print(F_obj1,end='\n')
-print(F_obj2,end='\n')
-print(F_obj3,end='\n')
-print(F_obj4,end='\n')
-print(F_obj5,end='\n')
-print(F_obj6,end='\n')
+print("Printing Evaluation Values:")
+print("Chromosome1 -",F_obj1,end='\n')
+print("Chromosome2 -",F_obj2,end='\n')
+print("Chromosome3 -",F_obj3,end='\n')
+print("Chromosome4 -",F_obj4,end='\n')
+print("Chromosome5 -",F_obj5,end='\n')
+print("Chromosome6 -",F_obj6,end='\n')
 
 #print step 3 Selection Values
-print(Fitness1,end='\n')
-print(Fitness2,end='\n')
-print(Fitness3,end='\n')
-print(Fitness4,end='\n')
-print(Fitness5,end='\n')
-print(Fitness6,end='\n')
+print("\nPrinting Fitness Values:")
+print("Chromosome1 -",Fitness1,end='\n')
+print("Chromosome2 -",Fitness2,end='\n')
+print("Chromosome3 -",Fitness3,end='\n')
+print("Chromosome4 -",Fitness4,end='\n')
+print("Chromosome5 -",Fitness5,end='\n')
+print("Chromosome6 -",Fitness6,end='\n')
+
+#print total fitness Value
+print("\nPrinting Total Fitness Values:")
+print(Total,end='\n')
+
+#Calculate Probability for each Chromosome
+P1 = Fitness1/Total
+P2 = Fitness2/Total
+P3 = Fitness3/Total
+P4 = Fitness4/Total
+P5 = Fitness5/Total
+P6 = Fitness6/Total
+
+#print Probability Values
+print("\nPrinting Probability Values:")
+print("Chromosome1 -",P1,end='\n')
+print("Chromosome2 -",P2,end='\n')
+print("Chromosome3 -",P3,end='\n')
+print("Chromosome4 -",P4,end='\n')
+print("Chromosome5 -",P5,end='\n')
+print("Chromosome6 -",P6,end='\n')
