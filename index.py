@@ -12,12 +12,14 @@ Fit = 0
 Total = 0
 prob = 0
 cummulative = 0
+ran = 0
 Chromosome = [a,b,c,d]
 Chromosomes = [Chromosome,Chromosome,Chromosome,Chromosome,Chromosome,Chromosome]
 F_objs= [F_obj,F_obj,F_obj,F_obj,F_obj,F_obj]
 Fitness = [Fit,Fit,Fit,Fit,Fit,Fit]
 P = [prob,prob,prob,prob,prob,prob]
 C = [cummulative,cummulative,cummulative,cummulative,cummulative,cummulative]
+R = [ran, ran, ran, ran, ran, ran]
 def f(a,b,c,d):
 	return ((a+2*b+3*c+4*d)-30)
 
@@ -43,5 +45,11 @@ for index in range(len(P)):
        print("Probability Value for ",index,"is: ", P[index],"\n")
 
 #Calculate Cummlative probability of selection process
-# i have no idea why this is here.. 
-for index in range(len(P)):
+##
+##
+
+#Calculate Random number R in the range 0-1 
+index = 0
+for index in range(len(R)):
+       R[index] = random.randrange(0,1,.1)
+       print("Random Value for ",index,"is: ", R[index],"\n")
